@@ -35,7 +35,7 @@ Eg : let Array NumberArr =  ['aaa', 'bbbb', 'bbbb', 'bbbb','aaa','zzzz','aaa','a
 
 >>>> output is >>> 'bbb'
 <pre>
-Solution: 
+Solution: https://jsfiddle.net/pgwLxeo5/
 const counts = {};
 const sampleArray = ['bbbb', 'bbbb','aaa', 'bbbb','aaa','zzzz','aaa','aaa'];
 sampleArray.sort();
