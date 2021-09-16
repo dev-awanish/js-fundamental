@@ -30,5 +30,21 @@ let myArr = [input];
   console.log(input,arr,'result',at);
   </pre>
 
+# 2 find the second maximum repeated number from the list
+Eg : let Array NumberArr =  ['aaa', 'bbbb', 'bbbb', 'bbbb','aaa','zzzz','aaa','aaa'];
+
+>>>> output is >>> 'bbb'
+<pre>
+Solution: 
+
+const counts = {};
+const sampleArray = ['aaa', 'bbbb', 'bbbb', 'bbbb','aaa','zzzz','aaa','aaa'];
+sampleArray.forEach(function (x) { 
+counts[x] = (counts[x] || 0) + 1; 
+});
+console.log(Object.keys(counts).length
+);
+console.log(Object.keys(counts)[1]);
+</pre>
 
 
