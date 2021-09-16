@@ -3,6 +3,7 @@
 # 1- Given  array >> [50,20,10,100], input : 100, Output>> second minium possible pair i.e [50,50];
 
 Solution >>>
+<pre>
 var arr = [50,20,10,100];
 arr.sort((a,b)=> b-a);
 console.log(arr);
@@ -27,6 +28,7 @@ let myArr = [input];
    }
   );
   console.log(input,arr,'result',at);
+  </pre>
 
 
 
