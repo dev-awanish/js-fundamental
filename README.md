@@ -36,15 +36,21 @@ Eg : let Array NumberArr =  ['aaa', 'bbbb', 'bbbb', 'bbbb','aaa','zzzz','aaa','a
 >>>> output is >>> 'bbb'
 <pre>
 Solution: 
-
 const counts = {};
-const sampleArray = ['aaa', 'bbbb', 'bbbb', 'bbbb','aaa','zzzz','aaa','aaa'];
+const sampleArray = ['bbbb', 'bbbb','aaa', 'bbbb','aaa','zzzz','aaa','aaa'];
+sampleArray.sort();
 sampleArray.forEach(function (x) { 
 counts[x] = (counts[x] || 0) + 1; 
 });
-console.log(Object.keys(counts).length
-);
-console.log(Object.keys(counts)[1]);
+let ret = {}
+for(var key in counts){
+    ret[counts[key]] = key;
+  }
+
+console.log((counts),ret);
+console.log(Object.keys(counts).length);
+console.log(Object.keys(ret)[1],ret[Object.keys(ret)[1]]);
+
 </pre>
 
 
