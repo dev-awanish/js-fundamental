@@ -1,7 +1,7 @@
 # js-fundamental
 
 # 1- Given  array >> [50,20,10,100], input : 100, Output>> second minium possible pair i.e [50,50];
-
+>>> https://jsfiddle.net/x4gcymn0/1/
 Solution >>>
 <pre>
 var arr = [50,20,10,100];
