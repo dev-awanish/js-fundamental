@@ -53,4 +53,31 @@ console.log(Object.keys(ret)[1],ret[Object.keys(ret)[1]]);
 
 </pre>
 
+# 3 Debounce and Throttling:
 
+# ans :
+
+<pre>
+//Case 2: With Debouncing
+const debounce = (func, delay) => {
+    let timerId;
+    return function () {
+        clearTimeout(timerId)
+        timerId = setTimeout(() => func.apply(this, arguments), delay)
+    };
+};
+
+function handleButtonClick() {
+     callbackFn();
+}
+
+function handleConsole() {
+    console.count("debounce function executed!!")
+}
+
+let callbackFn = debounce(handleConsole, 1000);
+
+let textField = document.querySelector('#search');
+textField.addEventListener('input', handleButtonClick);
+
+</pre>
